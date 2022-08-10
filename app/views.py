@@ -18,14 +18,6 @@ def index():
 
     return render_template('index.html', title = title, popular = popular_movies, upcoming = upcoming_movies, now_showing = now_showing_movies)
 
-@app.route('/movie/<int:movie_id>')
-def movie(movie_id):
-    '''
-    View detail of a movie gien a movie id
-    '''
-    
-    return render_template('movie.html', id=movie_id)
-
 @app.route('/movie/<int:id>')
 def movie(id):
     '''

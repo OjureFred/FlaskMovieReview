@@ -4,12 +4,12 @@
 <div class="container">
     <!-- Poster Background-->
     <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterpath" style="background:url({{ movie.poster}}); no-repeat center center">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterpath" style="background:url({{movie.poster}}) no-repeat center;">
 
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 movie-details">
             <h2>{{ movie.title}}</h2>
-            <p class="overview">{{% movie.overview %}}</p>
+            <p class="overview">{{ movie.overview }}</p>
             <p class="ratings">{{ movie.vote_average}}<b>-<li> {{ movie.vote_count}} votes</li></b></p>
         </div>
     </div>
