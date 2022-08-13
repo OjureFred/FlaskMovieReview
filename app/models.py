@@ -1,3 +1,4 @@
+from . import db
 class Movie:
     '''
     Movie class to define Movie objects
@@ -35,3 +36,7 @@ class Review:
             if review.movie_id == id:
                 response.append(review)
         return response
+
+class User(db.Model):
+    __tablename__ = 'users'
+    id = 
